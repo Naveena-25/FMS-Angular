@@ -1,0 +1,56 @@
+<br>
+<br>
+<div class="card">
+    <div class="card-header">
+        <h3 style="text-align: center; ">Confirm Flight Booking</h3>
+    </div>
+
+    <div class="card-body">
+        <form>
+            <!--------------User Name with pattern Validations---------------->
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input class="input-field" type="text" name="firstName" id="firstName" #firstName='ngModel' ngModel
+                    class="form-control" required pattern="^[a-zA-Z ]{2,30}$">
+                <div class="text-danger" *ngIf='firstName.touched && firstName.invalid'>
+                    <div *ngIf='firstName.errors.required'>
+                        *This field is mandatory
+                    </div>
+                    <div class="text-danger" *ngIf='firstName.errors.pattern'>Name Should contain Only Alphabets
+                    </div>
+                </div>
+            </div>
+            <!-------------------------Last Name--------------------------->
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input class="input-field" type="text" name="lastName" id="lastName" #lastName='ngModel' ngModel
+                    class="form-control" required pattern="^[a-zA-Z ]{2,30}$">
+                <div class="text-danger" *ngIf='lastName.touched && lastName.invalid'>
+                    <div *ngIf='lastName.errors.required'>
+                        *This field is mandatory
+                    </div>
+                    <div class="text-danger" *ngIf='lastName.errors.pattern'>Name Should contain Only Alphabets
+                    </div>
+                </div>
+            </div>
+            <!-----------------Gender----------------->
+            <label>Gender</label>&nbsp;
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optradio" required>Male
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optradio" required>Female
+                </label>
+              </div>
+            <br><br>
+            <div class="text-center">
+                <!-- Sign in button -->
+                <button class="btn btn-info" type="submit">Confirm Booking</button>
+            </div>
+        </form>
+    </div>
+
+</div>

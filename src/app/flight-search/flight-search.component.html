@@ -1,0 +1,52 @@
+<br>
+<br>
+<div class="card">
+    <div class="card-header">
+        <h3 style="text-align: center; ">Search Flight</h3>
+    </div>
+   
+        <div class="card-body">
+            <form>
+            <div class="form-group">
+                <label for="from">Travelling From</label>
+                <input class="input-field" type="text" name="from" id="from" #from='ngModel' ngModel
+                    class="form-control" required pattern="^[a-zA-Z ]{2,30}$">
+                <div class="text-danger" *ngIf='from.touched && from.invalid'>
+                    <div *ngIf='to.errors.required'>
+                        *This field is mandatory
+                    </div>
+                    <div class="text-danger" *ngIf='from.errors.pattern'>It Should contain Only Alphabets
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="to">Travelling To</label>
+                <input class="input-field" type="text" name="to" id="to" #to='ngModel' ngModel class="form-control"
+                    required pattern="^[a-zA-Z ]{2,30}$">
+                <div class="text-danger" *ngIf='to.touched && to.invalid'>
+                    <div *ngIf='to.errors.required'>
+                        *This field is mandatory
+                    </div>
+                    <div class="text-danger" *ngIf='to.errors.pattern'>It Should contain Only Alphabets
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="dateoftravelling">Date of Travelling</label>
+                <input type="date" name="dateoftravelling" id="dateoftravelling" #dateoftravelling='ngModel' ngModel
+                    class="form-control" required>
+                <div *ngIf='dateoftravelling.touched && dateoftravelling.invalid'>
+                    <div class="text-danger" *ngIf='dateoftravelling.errors.required'>*This Field is Mandatory</div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <!-- Sign in button -->
+                <button class="btn btn-info" type="submit">Submit</button>
+            </div>
+        </form>
+        </div>
+ 
+</div>
