@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FlightService } from '../_service/flight.service';
 
 @Component({
   selector: 'app-flight-info',
@@ -7,13 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FlightInfoComponent implements OnInit {
 
+  flights:any;
 
-  constructor() {
+  constructor(private flightService:FlightService) { }
 
+  ngOnInit(): void {
+    let list = this.flightService.viewAllFlights();
+    list.subscribe((data) => this.flights = data);
   }
-
-  ngOnInit() {
-    
-  };
+  
 }
 

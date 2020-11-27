@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import {HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -12,6 +13,7 @@ import { FlightSearchComponent } from './flight-search/flight-search.component';
 import { FlightBookingComponent } from './flight-booking/flight-booking.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { FlightSearchResultsComponent } from './flight-search/flight-search-results/flight-search-results.component';
 
 @NgModule({
   declarations: [
@@ -23,11 +25,13 @@ import { ContactusComponent } from './contactus/contactus.component';
     FlightSearchComponent,
     FlightBookingComponent,
     AboutusComponent,
-    ContactusComponent
+    ContactusComponent,
+    FlightSearchResultsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],
