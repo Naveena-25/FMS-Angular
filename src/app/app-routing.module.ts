@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { ContactusComponent } from './contactus/contactus.component';
 import { FlightBookingComponent } from './flight-booking/flight-booking.component';
 import { FlightInfoComponent } from './flight-info/flight-info.component';
 import { FlightSearchComponent } from './flight-search/flight-search.component';
@@ -13,7 +14,8 @@ const routes: Routes = [
 {path:'flightsinfo', component:FlightInfoComponent},
 { path:'flight-search', component:FlightSearchComponent},
 { path: 'flight-booking', component:FlightBookingComponent},
-{ path:'aboutus', component:AboutusComponent}
+{ path:'aboutus', component:AboutusComponent},
+{ path: 'contactus', component:ContactusComponent}
 ];
 
 @NgModule({
