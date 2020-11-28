@@ -14,19 +14,26 @@ import { FlightBookingComponent } from './flight-booking/flight-booking.componen
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { FlightSearchResultsComponent } from './flight-search/flight-search-results/flight-search-results.component';
+import { FlightCheckinComponent } from './flight-checkin/flight-checkin.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    FlightInfoComponent,
-    FooterComponent,
-    FlightSearchComponent,
-    FlightBookingComponent,
     AboutusComponent,
     ContactusComponent,
-    FlightSearchResultsComponent
+    FooterComponent,
+
+    FlightInfoComponent,
+    FlightSearchComponent,
+    FlightSearchResultsComponent,
+    
+    FlightBookingComponent,
+
+    FlightCheckinComponent,
+    
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,30 @@
+
+<div class="container mt-4">
+
+    <br>
+    <table class="table table-hover table-bordered ">
+        <thead class="thead-dark">
+            <tr>
+                <th>CHECK-IN ID</th>
+                <th>BOOKING ID</th>
+                <th>SEAT NUMBER</th>
+                <th>CHECK IN DATE</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngIf="checkin">
+                <td>{{checkin.cId}}</td>
+                <td>{{checkin.bId}}</td>
+                <td>{{checkin.seatNumber}}</td>
+                <td>{{checkin.checkInTime}}</td>
+
+
+
+                <!-- <td><button class="btn btn-outline-success" type="button">
+                        <i class="fas fa-check"></i> CheckIn</button></td> -->
+            </tr>
+        </tbody>
+    </table>
+
+</div>
