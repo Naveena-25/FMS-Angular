@@ -1,4 +1,3 @@
-
 <div class="container mt-4">
 
     <br>
@@ -13,11 +12,11 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngIf="checkin">
-                <td>{{checkin.cId}}</td>
-                <td>{{checkin.bId}}</td>
-                <td>{{checkin.seatNumber}}</td>
-                <td>{{checkin.checkInTime}}</td>
+            <tr *ngFor="let checkIn of checkInList">
+                <td>{{checkIn.cId}}</td>
+                <td>{{checkIn.bId}}</td>
+                <td>{{checkIn.seatNumber}}</td>
+                <td>{{checkIn.checkInTime}}</td>
 
 
 

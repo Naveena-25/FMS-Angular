@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { FlightBookingComponent } from './flight-booking/flight-booking.component';
+import { FlightCheckinSearchComponent } from './flight-checkin/flight-checkin-search/flight-checkin-search.component';
 import { FlightCheckinComponent } from './flight-checkin/flight-checkin.component';
 import { FlightInfoComponent } from './flight-info/flight-info.component';
 import { FlightSearchResultsComponent } from './flight-search/flight-search-results/flight-search-results.component';
@@ -17,7 +18,9 @@ const routes: Routes = [
 {path: 'search-result' , component:FlightSearchResultsComponent},
 { path: 'flight-booking', component:FlightBookingComponent},
 { path:'aboutus', component:AboutusComponent},
-{ path: 'contactus', component:ContactusComponent}
+{ path: 'contactus', component:ContactusComponent},
+{ path: 'flight-checkin-search', component:FlightCheckinSearchComponent}
+
 ];
 
 @NgModule({

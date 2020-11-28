@@ -21,6 +21,10 @@ export class FlightService {
   public viewAllFlightWithSourceDestinationDate(){
     return this.http.get(this.flightURL+"/getFlightBySourceDestinationDate?source="+this.source+"&&destination="+this.destination+"&&date="+this.date);
   }
+  //getFlightById
+  public getFlightById(id){
+    return this.http.get(this.flightURL+"/getFlightById?id="+id);
+  }
 
 
 }

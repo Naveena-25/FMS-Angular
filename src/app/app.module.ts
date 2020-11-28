@@ -15,6 +15,7 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { FlightSearchResultsComponent } from './flight-search/flight-search-results/flight-search-results.component';
 import { FlightCheckinComponent } from './flight-checkin/flight-checkin.component';
+import { FlightCheckinSearchComponent } from './flight-checkin/flight-checkin-search/flight-checkin-search.component';
 
 
 @NgModule({
@@ -33,6 +34,8 @@ import { FlightCheckinComponent } from './flight-checkin/flight-checkin.componen
     FlightBookingComponent,
 
     FlightCheckinComponent,
+
+    FlightCheckinSearchComponent,
     
   ],
   imports: [

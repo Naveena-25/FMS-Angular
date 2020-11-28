@@ -8,11 +8,14 @@ import { CheckInService } from '../_service/checkin.service';
   styleUrls: ['./flight-checkin.component.css']
 })
 export class FlightCheckinComponent implements OnInit {
-  @Input() checkin: CheckIn;
+  // @Input() checkin: CheckIn;
+
+  checkInList:any;
 
   constructor(private checkInService: CheckInService) { }
   
   ngOnInit(): void {
+    this.checkInService.getAllCheckIn().subscribe((data)=>this.checkInList=data);
   }
 
 }
