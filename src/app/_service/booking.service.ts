@@ -18,7 +18,9 @@ export class BookingService {
 
   constructor(private http:HttpClient) { }
 
-  bookingURL:string = "http://localhost:9000/booking";
+  bookingURL:string = "http://ec2-13-233-136-19.ap-south-1.compute.amazonaws.com:8080/booking-service/booking";
+
+  
   confirmBooking(book:Booking) {
       return this.http.post(this.bookingURL,book);
   }
