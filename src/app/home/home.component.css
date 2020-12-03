@@ -2,4 +2,7 @@
   img{
       height: 42em;
   }
- 
+ p{
+ font-family: 'Patrick Hand', cursive;
+ font-weight: 500;
+ }
